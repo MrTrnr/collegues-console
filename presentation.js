@@ -7,18 +7,14 @@ class Presentation {
     const { stdin: input, stdout: output } = require("process");
 
     const rl = readline.createInterface({ input, output });
-    const Pres = new Presentation();
 
     rl.question("Votre choix : ", (answer) => {
-      // TODO: Log the answer in a database
-      //console.log(`Thank you for your valuable feedback: ${answer}`);
-
       rl.close();
       switch (answer) {
         case "1":
           {
-            console.log(">> Liste des clients");
-            Pres.demarrer();
+            console.log(">> Liste des collègues");
+            this.demarrer();
           }
           break;
         case "99":
@@ -28,7 +24,7 @@ class Presentation {
           break;
         default: {
           console.log("code autre que 1 ou 99");
-          Pres.demarrer();
+          this.demarrer();
         }
       }
     });
