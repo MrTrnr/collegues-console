@@ -13,22 +13,20 @@ class Presentation {
       // TODO: Log the answer in a database
       //console.log(`Thank you for your valuable feedback: ${answer}`);
 
+      rl.close();
       switch (answer) {
         case "1":
           {
             console.log(">> Liste des clients");
-            rl.close();
             Pres.demarrer();
           }
           break;
         case "99":
           {
             console.log("Au revoir");
-            rl.close();
           }
           break;
         default: {
-          rl.close();
           console.log("code autre que 1 ou 99");
         }
       }
