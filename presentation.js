@@ -23,6 +23,7 @@ class Presentation {
           break;
         case "99":
           {
+            console.log("Au revoir");
             rl.close();
           }
           break;
