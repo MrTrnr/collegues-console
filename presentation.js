@@ -28,6 +28,7 @@ class Presentation {
           break;
         default: {
           console.log("code autre que 1 ou 99");
+          Pres.demarrer();
         }
       }
     });
