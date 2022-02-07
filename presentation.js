@@ -3,7 +3,8 @@ class Presentation {
 
   demarrer() {
     console.log("1. Lister les collegues\n99. Sortir");
-    const readline = require("readline");
+    // const readline = require("readline");
+    const readline = import("readline");
     const { stdin: input, stdout: output } = require("process");
 
     const rl = readline.createInterface({ input, output });
